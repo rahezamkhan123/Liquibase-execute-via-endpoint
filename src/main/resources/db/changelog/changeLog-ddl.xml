@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+	<include file="/db/changelog/ddl/00-create_hibernate_seq.xml" />		
+	<include file="/db/changelog/ddl/00-create_table_shop_type.xml" />
+	<include file="/db/changelog/ddl/00-create_table_shop_service.xml" />
+	<include file="/db/changelog/ddl/00-create_shop_seq.xml" />
+	<include file="/db/changelog/ddl/00-create_table_shop_verify.xml" />
+
+</databaseChangeLog>

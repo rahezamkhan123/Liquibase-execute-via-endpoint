@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+	<changeSet id="00" author="admin">
+		<insert tableName="shop_verify">
+			<column name="aadhar_no" value="740572445345" />
+			<column name="gst_number" value="JHH6767766" />
+			<column name="is_verified" value="true" />
+			<column name="license_no" value="KDJWIEJD@#" />
+			<column name="shop_name" value="Big Mall" />
+			<column name="pan_card" value="JPWIRTJ3445K" />
+			<column name="shop_image" value="IMG" />
+		</insert>
+	</changeSet>
+</databaseChangeLog>

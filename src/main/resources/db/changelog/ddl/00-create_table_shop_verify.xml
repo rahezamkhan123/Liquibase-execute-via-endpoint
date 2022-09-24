@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+	<changeSet id="00" author="admin">
+		<createTable tableName="shop_verify"
+			remarks="Table for storing shop verify record">
+
+			<column name="shop_verify_id" type="BIGINT"
+				autoIncrement="true">
+				<constraints nullable="false" unique="true"
+					primaryKey="true" />
+			</column>
+
+			<column name="aadhar_no" type="varchar(20)">
+				<constraints nullable="false" />
+			</column>
+
+			<column name="gst_number" type="varchar(20)">
+				<constraints nullable="false" />
+			</column>
+
+			<column name="is_verified" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+
+			<column name="license_no" type="varchar(20)">
+				<constraints nullable="false" />
+			</column>
+
+			<column name="shop_name" type="varchar(30)">
+				<constraints nullable="false" />
+			</column>
+
+			<column name="pan_card" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+
+			<column name="shop_image" type="longblob">
+				<constraints nullable="false" />
+			</column>
+
+		</createTable>
+	</changeSet>
+</databaseChangeLog>
